@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">TresEnUno</string>
+    <string name="ButtonNav">NAVEGADOR</string>
+    <string name="ButtonCamera">CAMARA</string>
+    <string name="ButtonCal">CALCULADORA</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

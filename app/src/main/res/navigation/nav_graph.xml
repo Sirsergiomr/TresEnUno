@@ -3,23 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/fragmentPrincipal">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.tresenuno.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" >
-        <action
-            android:id="@+id/action_mainActivity_to_fragmentNavegador"
-            app:destination="@id/fragmentNavegador" />
-        <action
-            android:id="@+id/action_mainActivity_to_fragmentCamara"
-            app:destination="@id/fragmentCamara" />
-        <action
-            android:id="@+id/action_mainActivity_to_fragmentCalculardora"
-            app:destination="@id/fragmentCalculardora" />
-    </activity>
     <fragment
         android:id="@+id/fragmentNavegador"
         android:name="com.example.tresenuno.FragmentNavegador"
@@ -29,10 +14,26 @@
         android:id="@+id/fragmentCamara"
         android:name="com.example.tresenuno.FragmentCamara"
         android:label="fragment_camara"
-        tools:layout="@layout/fragment_camara" />
+        tools:layout="@layout/fragment_camara" >
+    </fragment>
     <fragment
         android:id="@+id/fragmentCalculardora"
         android:name="com.example.tresenuno.FragmentCalculardora"
         android:label="fragment_calculardora"
         tools:layout="@layout/fragment_calculardora" />
+    <fragment
+        android:id="@+id/fragmentPrincipal"
+        android:name="com.example.tresenuno.FragmentPrincipal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentNavegador"
+            app:destination="@id/fragmentNavegador" />
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentCamara"
+            app:destination="@id/fragmentCamara" />
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentCalculardora"
+            app:destination="@id/fragmentCalculardora" />
+    </fragment>
 </navigation>
