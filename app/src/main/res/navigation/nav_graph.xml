@@ -9,7 +9,8 @@
         android:id="@+id/fragmentNavegador"
         android:name="com.example.tresenuno.FragmentNavegador"
         android:label="fragment_navegador"
-        tools:layout="@layout/fragment_navegador" />
+        tools:layout="@layout/fragment_navegador" >
+    </fragment>
     <fragment
         android:id="@+id/fragmentCamara"
         android:name="com.example.tresenuno.FragmentCamara"

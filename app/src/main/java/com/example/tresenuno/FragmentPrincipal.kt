@@ -27,7 +27,8 @@ class FragmentPrincipal : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         buttonNavegador.setOnClickListener({
-
+            val directions = FragmentPrincipalDirections.actionFragmentPrincipalToFragmentNavegador()
+            Navigation.findNavController(it).navigate(directions)
         })
 
     }
