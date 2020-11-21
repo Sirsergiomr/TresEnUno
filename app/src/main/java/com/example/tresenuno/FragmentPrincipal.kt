@@ -30,6 +30,13 @@ class FragmentPrincipal : Fragment() {
             val directions = FragmentPrincipalDirections.actionFragmentPrincipalToFragmentNavegador()
             Navigation.findNavController(it).navigate(directions)
         })
-
+        buttonCamara.setOnClickListener({
+            val directions = FragmentPrincipalDirections.actionFragmentPrincipalToFragmentCamara()
+            Navigation.findNavController(it).navigate(directions)
+        })
+        buttonCalculator.setOnClickListener({
+            val directions = FragmentPrincipalDirections.actionFragmentPrincipalToFragmentCalculardora()
+            Navigation.findNavController(it).navigate(directions)
+        })
     }
 }
