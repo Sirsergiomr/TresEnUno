@@ -15,6 +15,7 @@ class FragmentNavegador : Fragment() {
 
     private val BASE_URL = "https://google.com"
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,6 +36,17 @@ class FragmentNavegador : Fragment() {
         arguments?.let {
 
         }
+        button.setOnClickListener(){
+            if(webView.canGoBack()){
+                webView.goBack()
+            }
+        }
+
+        button2.setOnClickListener(){
+            if(webView.canGoForward()){
+                webView.goForward()
+            }
+        }
         webView.webChromeClient = object : WebChromeClient(){
 
         }
@@ -50,4 +62,4 @@ class FragmentNavegador : Fragment() {
     }
 
 
-}
+ }

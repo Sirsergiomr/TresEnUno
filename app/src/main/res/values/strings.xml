@@ -7,5 +7,6 @@
     <string name="TitleNavigator">NAVEGADOR</string>
     <string name="TitleCamera">CAMARA</string>
     <string name="TitleCalculator">CALCULADORA</string>
-
+    <string name="Adelante">-></string>
+    <string name="Atras">B</string>
 </resources>
