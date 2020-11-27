@@ -36,5 +36,4 @@ class FragmentCamara : Fragment() {
                 startActivity(i)
         }
     }
-
 }

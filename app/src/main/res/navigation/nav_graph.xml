@@ -21,7 +21,11 @@
         android:id="@+id/fragmentCalculardora"
         android:name="com.example.tresenuno.FragmentCalculardora"
         android:label="fragment_calculardora"
-        tools:layout="@layout/fragment_calculardora" />
+        tools:layout="@layout/fragment_calculardora" >
+        <action
+            android:id="@+id/action_fragmentCalculardora_to_fragment_Resultado"
+            app:destination="@id/fragment_Resultado" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentPrincipal"
         android:name="com.example.tresenuno.FragmentPrincipal"
@@ -36,5 +40,14 @@
         <action
             android:id="@+id/action_fragmentPrincipal_to_fragmentCalculardora"
             app:destination="@id/fragmentCalculardora" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Resultado"
+        android:name="com.example.tresenuno.Fragment_Resultado"
+        android:label="fragment__resultado"
+        tools:layout="@layout/fragment__resultado" >
+        <argument
+            android:name="Resultado"
+            app:argType="string" />
     </fragment>
 </navigation>

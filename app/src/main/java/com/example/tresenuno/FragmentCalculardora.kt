@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_calculardora.*
 
 
@@ -157,6 +158,11 @@ class FragmentCalculardora : Fragment() {
                     }
                 }
             }
+
+            val directions= FragmentCalculardoraDirections.actionFragmentCalculardoraToFragmentResultado(
+                Resultado =  textView.getText().toString()
+            )
+            Navigation.findNavController(it).navigate(directions)
         }
     }
             fun sum(a: Double, b: Double): Double = a + b
