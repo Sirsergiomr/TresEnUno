@@ -64,7 +64,6 @@
                 android:background="@drawable/bordes"
                 android:hapticFeedbackEnabled="false"
                 android:isScrollContainer="false"
-                android:onClick="numbers"
                 android:shadowColor="#673AB7"
                 android:text="7"
                 android:textColor="#00B0FF"
