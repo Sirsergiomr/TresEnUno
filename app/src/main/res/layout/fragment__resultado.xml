@@ -30,7 +30,8 @@
         android:layout_height="wrap_content"
         android:text="RESULTADO"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintBottom_toTopOf="@+id/TexReultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
