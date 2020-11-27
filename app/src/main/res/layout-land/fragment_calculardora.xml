@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_width="721dp"
+        android:layout_height="35dp"
         android:background="#1B2977"
         android:gravity="end"
         android:textColor="#00E5FF"
@@ -23,7 +23,7 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="356dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
@@ -41,14 +41,14 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/buttonDel"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btDel"
                 android:text="DEL"
-                android:textColor="#00B0FF" />
+                android:textColor="#00B0FF"
+                app:backgroundTint="@android:color/transparent" />
         </TableRow>
 
         <TableRow
@@ -67,7 +67,8 @@
                 android:shadowColor="#673AB7"
                 android:text="7"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt8"
@@ -75,11 +76,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:shadowColor="#673AB7"
                 android:text="8"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt9"
@@ -87,11 +88,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:shadowColor="#673AB7"
                 android:text="9"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/button_sumar"
@@ -100,11 +101,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btSuma"
                 android:shadowColor="#673AB7"
                 android:text="+"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
         </TableRow>
 
         <TableRow
@@ -123,7 +124,8 @@
                 android:onClick="numbers"
                 android:text="4"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt5"
@@ -131,10 +133,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="5"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt6"
@@ -142,10 +144,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="6"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/button_restas"
@@ -154,10 +156,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btResta"
                 android:text="-"
                 android:textColor="#00B0FF"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                app:backgroundTint="@android:color/transparent" />
         </TableRow>
 
         <TableRow
@@ -171,10 +173,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="1"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt2"
@@ -182,10 +184,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="2"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt3"
@@ -193,21 +195,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="3"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
-                android:id="@+id/buttonmulti"
+                android:id="@+id/button_multi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btMulti"
                 android:text="x"
                 android:textColor="#00B0FF"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                app:backgroundTint="@android:color/transparent" />
 
         </TableRow>
 
@@ -217,15 +219,15 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/button_punto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="punto"
                 android:text="."
                 android:textColor="#00B0FF"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/bt0"
@@ -233,10 +235,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="numbers"
                 android:text="0"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
                 android:id="@+id/button_resultado"
@@ -244,21 +246,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btEquals"
                 android:text="="
                 android:textColor="#00B0FF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                app:backgroundTint="@android:color/transparent" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/button_div"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bordes"
-                android:onClick="btDivi"
                 android:text="/"
                 android:textColor="#00B0FF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="@android:color/transparent" />
 
         </TableRow>
 
